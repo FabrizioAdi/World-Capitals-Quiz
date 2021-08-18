@@ -1,3 +1,4 @@
+/* Google fonts link */
 @import url('https://fonts.googleapis.com/css2?family=Merienda&family=Roboto&display=swap');
 
 * {
@@ -32,7 +33,7 @@ body {
 }
 
 h1 {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-size: 40px;
     text-align: center;
     font-weight: 300;
@@ -57,6 +58,7 @@ h1 {
     font-size: 20px;
     color: white;
     padding: 5px 10px;
+    margin-bottom: 5px;
 }
 
 button:hover {
@@ -70,6 +72,8 @@ button:hover {
 
 .start, .next {
     padding: 5px;
-    font-size: 25px;
+    margin-right: 5px;
+    border-radius: 6px;
+    font-size: 20px;
     font-weight: bold;
 }
