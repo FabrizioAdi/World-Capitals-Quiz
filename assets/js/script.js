@@ -1,26 +1,24 @@
 // select all elements
-const start = document.getElementsByClassName('start')
-const question = document.getElementById('question')
-start.addEventListener('click', startGame)
+let start = document.querySelector('#start');
+
+let exit = document.querySelector('.exit');
+let next =document.querySelector('.next');
+
+let questionBox = document.querySelector('question-box');
+let question = document.querySelector('question');
+
+let choice1 = document.querySelector('#choice1');
+let choice2 = document.querySelector('#choice2');
+let choice3 = document.querySelector('#choice3');
+let choice4 = document.querySelector('#choice4');
+
+let button = document.querySelector('.button')
 
 
 
 
 
 
-function startGame()
-console.log('start')
 
-// create questions
-let question = [
-    { 
-        question: 'What city is the capital of Brazil',
-        answers: [
-             { text: '', correct: false }
-             { text: '', correct: false }
-             { text: '', correct: true }
-             { text: '', correct: false } 
-        ]
-    }    
-];
-    
+
+

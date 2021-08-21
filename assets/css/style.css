@@ -81,6 +81,8 @@ button:hover {
 }
 
 .exit, .next {
+    background: tomato;
+    color: white;
     padding: 5px;
     margin-right: 5px;
     border-radius: 6px;
