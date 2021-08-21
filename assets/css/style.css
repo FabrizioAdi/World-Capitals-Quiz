@@ -26,7 +26,7 @@ body {
     width: 800px;
     max-width: 75%;
 }
-
+/* Logo and name section */
 .logo {
     height: 60px; 
     padding-right: 5px;  
@@ -38,7 +38,17 @@ h1 {
     text-align: center;
     font-weight: 300;
 }
-
+/* Start button section */
+#start {
+    background:tomato;
+    text-align: center;
+    padding: 15px 0;
+    color: white;
+    font-size: 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+/* Question and answer section */
 #question {
     font-size: 20px;
     font-family: Merienda, cursive;
@@ -64,13 +74,13 @@ h1 {
 button:hover {
     border-color: rgb(12, 12, 12);
 }
-
+/* Controls section witx exit and next button */
 #controls {
     display:flex;
     align-items: center;
 }
 
-.start, .next {
+.exit, .next {
     padding: 5px;
     margin-right: 5px;
     border-radius: 6px;
