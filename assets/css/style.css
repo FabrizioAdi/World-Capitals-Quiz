@@ -48,6 +48,10 @@ h1 {
     border-radius: 6px;
     cursor: pointer;
 }
+#start:hover {
+    background: yellow;
+    color: black;
+}
 .hide {
     display: none;
 }
