@@ -1,30 +1,14 @@
 // select all elements
-let start = document.querySelector('#start');
+let start = document.getElementById('start');
+let questionBox = document.getElementById('question-box');
+start.addEventListener('click', startGame);
 
-let exit = document.querySelector('.exit');
-let next =document.querySelector('.next');
+function startGame() {
+    console.log('start')
+    start.classList.add('hide')
+    questionBox.classList.remove('hide')
 
-let questionBox = document.querySelector('question-box');
-let question = document.querySelector('question');
-
-let choice1 = document.querySelector('#choice1');
-let choice2 = document.querySelector('#choice2');
-let choice3 = document.querySelector('#choice3');
-let choice4 = document.querySelector('#choice4');
-
-let button = document.querySelector('.button')
-
-// Start button click
-start.addEventListener('click' , ()=> {
-    start.style.display = 'none';
-})
-// Exit button
-exit.addEventListener('click' , ()=> {
-    start.style.display = 'block';
-})
-
-
-
+}
 
 
 
