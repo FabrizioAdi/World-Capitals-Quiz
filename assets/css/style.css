@@ -48,6 +48,9 @@ h1 {
     border-radius: 6px;
     cursor: pointer;
 }
+.hide {
+    display: none;
+}
 /* Question and answer section */
 #question {
     font-size: 20px;

@@ -14,8 +14,14 @@ let choice4 = document.querySelector('#choice4');
 
 let button = document.querySelector('.button')
 
-
-
+// Start button click
+start.addEventListener('click' , ()=> {
+    start.style.display = 'none';
+})
+// Exit button
+exit.addEventListener('click' , ()=> {
+    start.style.display = 'block';
+})
 
 
 
