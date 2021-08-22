@@ -78,69 +78,69 @@ let questions = [
 question: 'What city is the capital of Australia ?',
     answers: [
       { text: 'Canberra', correct: true },
-      { text: '', correct: false },
-      { text: '', correct: false },
-      { text: '', correct: false }
+      { text: 'Madrid', correct: false },
+      { text: 'Auckland', correct: false },
+      { text: 'Kyiv', correct: false }
     ]
   },
 //Q5
 {
-question: 'What city is the capital of ?',
+question: 'What city is the capital of France ?',
     answers: [
-      { text: '', correct: true },
-      { text: '', correct: false },
-      { text: '', correct: false },
-      { text: '', correct: false }
+      { text: 'London', correct: false },
+      { text: 'Rome', correct: false },
+      { text: 'Santiago', correct: false },
+      { text: 'Paris', correct: true }
     ]
   },
 //Q6
 {
-question: 'What city is the capital of ?',
+question: 'What city is the capital of England?',
     answers: [
-      { text: '', correct: true },
-      { text: '', correct: false },
-      { text: '', correct: false },
-      { text: '', correct: false }
+      { text: 'Prague', correct: false },
+      { text: 'London', correct: true },
+      { text: 'Mexico City', correct: false },
+      { text: 'Abuja', correct: false }
     ]
   },
 //Q7
 {
-question: 'What city is the capital of ?',
+question: 'What city is the capital of South Korea ?',
     answers: [
-      { text: '', correct: true },
-      { text: '', correct: false },
-      { text: '', correct: false },
-      { text: '', correct: false }
+      { text: 'Seoul', correct: true },
+      { text: 'Hanoi', correct: false },
+      { text: 'Buenos Aires', correct: false },
+      { text: 'Tokyo', correct: false }
     ]
   },
 //Q8
 {
-question: 'What city is the capital of ?',
+question: 'What city is the capital of USA ?',
     answers: [
-      { text: '', correct: true },
-      { text: '', correct: false },
-      { text: '', correct: false },
-      { text: '', correct: false }
+      { text: 'Athens', correct: false },
+      { text: 'Cairo', correct: false },
+      { text: 'Washington', correct: true },
+      { text: 'Berlin', correct: false }
     ]
   },
 //Q9
 {
-question: 'What city is the capital of ?',
+question: 'What city is the capital of Germany?',
     answers: [
-      { text: '', correct: true },
-      { text: '', correct: false },
-      { text: '', correct: false },
-      { text: '', correct: false }
+      { text: 'Vienna', correct: false },
+      { text: 'Moscow', correct: false },
+      { text: 'London', correct: false },
+      { text: 'Berlin', correct: true }
     ]
   },
 //Q10
 {
-question: 'What city is the capital of ?',
+question: 'What city is the capital of Russia?',
     answers: [
-      { text: '', correct: true },
-      { text: '', correct: false },
-      { text: '', correct: false },
-      { text: '', correct: false }
+      { text: 'Moscow', correct: true },
+      { text: 'Vilnius', correct: false },
+      { text: 'Phnom Penh', correct: false },
+      { text: 'Washington', correct: false }
     ]
   },
 
