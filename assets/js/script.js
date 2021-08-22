@@ -2,16 +2,17 @@
 let start = document.getElementById('start');
 let questionBox = document.getElementById('question-box');
 
-let randomQuestion, currentQuestion
 let questionElement = document.getElementById('question')
 let answersElement = document.getElementById('answers')
+
+let randomQuestions, currentQuestion
 
 start.addEventListener('click', startGame);
 
 function startGame() {
     console.log('start')
     start.classList.add('hide')
-    randomQuestion = questions.sort(()=> Math.random() - .5)
+    randomQuestions = questions.sort(() => Math.random() - .5)
     currentQuestion = 0
     questionBox.classList.remove('hide')
     nextQuestion()
@@ -19,7 +20,7 @@ function startGame() {
 }
 
 function nextQuestion() {
-    showQuestion(randomQuestion[currentQuestion])
+    showQuestion(randomQuestions[currentQuestion])
 }
 
 function showQuestion(question) {
@@ -40,13 +41,10 @@ function showQuestion(question) {
 function answerChoice() {
 
 }
-
-
-
 // create questions
-let question = [
+let questions = [
     { 
-        question: 'What city is the capital of Brazil',
+        question: 'What city is the capital of Brazil ?',
         answers: [
              { text: 'Buenos Aires', correct: false },
              { text: 'Paris', correct: false },
