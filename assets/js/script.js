@@ -8,7 +8,7 @@ let answersElement = document.getElementById('answers')
 let randomQuestions, currentQuestion
 
 start.addEventListener('click', startGame);
-
+// startGame control function
 function startGame() {
     console.log('start')
     start.classList.add('hide')
@@ -18,11 +18,11 @@ function startGame() {
     nextQuestion()
 
 }
-
+// function of changing the question to the next one
 function nextQuestion() {
     showQuestion(randomQuestions[currentQuestion])
 }
-
+// random question section
 function showQuestion(question) {
     questionElement.innerText = question.question
     question.answers.forEach(answers => {
@@ -143,8 +143,5 @@ question: 'What city is the capital of Russia?',
       { text: 'Washington', correct: false }
     ]
   },
-
-
-
 
 ]
