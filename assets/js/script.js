@@ -55,7 +55,7 @@ let questions = [
     },
 //Q2
     {
-        question: 'What city is the capital of Canada?',
+        question: 'What city is the capital of Canada ?',
         answers: [
           { text: 'Dublin', correct: false },
           { text: 'Montevideo', correct: false },
@@ -65,24 +65,26 @@ let questions = [
       },
 //Q3
 {
-    question: 'What city is the capital of ?',
+    question: 'What city is the capital of Portugal ?',
     answers: [
       { text: 'Lisbon', correct: true },
-      { text: '', correct: false },
-      { text: '', correct: false },
-      { text: '', correct: false }
+      { text: 'Warsaw', correct: false },
+      { text: 'Bern', correct: false },
+      { text: 'Accra', correct: false }
     ]
   },
 //Q4
-question: 'What city is the capital of ?',
+{
+question: 'What city is the capital of Australia ?',
     answers: [
-      { text: '', correct: true },
+      { text: 'Canberra', correct: true },
       { text: '', correct: false },
       { text: '', correct: false },
       { text: '', correct: false }
     ]
   },
 //Q5
+{
 question: 'What city is the capital of ?',
     answers: [
       { text: '', correct: true },
@@ -92,6 +94,7 @@ question: 'What city is the capital of ?',
     ]
   },
 //Q6
+{
 question: 'What city is the capital of ?',
     answers: [
       { text: '', correct: true },
@@ -101,6 +104,7 @@ question: 'What city is the capital of ?',
     ]
   },
 //Q7
+{
 question: 'What city is the capital of ?',
     answers: [
       { text: '', correct: true },
@@ -110,6 +114,7 @@ question: 'What city is the capital of ?',
     ]
   },
 //Q8
+{
 question: 'What city is the capital of ?',
     answers: [
       { text: '', correct: true },
@@ -119,6 +124,7 @@ question: 'What city is the capital of ?',
     ]
   },
 //Q9
+{
 question: 'What city is the capital of ?',
     answers: [
       { text: '', correct: true },
@@ -128,6 +134,7 @@ question: 'What city is the capital of ?',
     ]
   },
 //Q10
+{
 question: 'What city is the capital of ?',
     answers: [
       { text: '', correct: true },
