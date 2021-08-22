@@ -3,6 +3,8 @@ let start = document.getElementById('start');
 let questionBox = document.getElementById('question-box');
 
 let randomQuestion, currentQuestion
+let questionElement = document.getElementById('question')
+let answersElement = document.getElementById('answers')
 
 start.addEventListener('click', startGame);
 
@@ -20,7 +22,9 @@ function nextQuestion {
     showQuestion(randomQuestion[currentQuestion])
 }
 
-function showQuestion(question)
+function showQuestion(question) {
+
+}
 
 function answerChoice {
 
