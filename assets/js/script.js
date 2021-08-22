@@ -18,15 +18,26 @@ function startGame() {
 
 }
 
-function nextQuestion {
+function nextQuestion() {
     showQuestion(randomQuestion[currentQuestion])
 }
 
 function showQuestion(question) {
+    questionElement.innerText = question.question
+    question.answers.forEach(answers => {
+        let button = document.createElement('button')
+        button.innerText = answers.text
+        button.classList.add('button')
+        if (answers.correct) {
+            button.dataset.correct = answers.correct
+        }
+        button.addEventListener('click', secelctAnswers)
+        answersElement.appendChild(button)
+    });
 
 }
 
-function answerChoice {
+function answerChoice() {
 
 }
 
@@ -37,10 +48,10 @@ let question = [
     { 
         question: 'What city is the capital of Brazil',
         answers: [
-             { text: 'Buenos Aires', correct: false }
-             { text: 'Paris', correct: false }
-             { text: 'Brasilia', correct: true }
-             { text: 'Tokyo', correct: false } 
+             { text: 'Buenos Aires', correct: false },
+             { text: 'Paris', correct: false },
+             { text: 'Brasilia', correct: true },
+             { text: 'Tokyo', correct: false }
         ]
     }    
 ];
