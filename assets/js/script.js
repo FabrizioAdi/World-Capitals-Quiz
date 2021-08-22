@@ -42,6 +42,7 @@ function answerChoice() {
 
 }
 // create questions
+//Q1
 let questions = [
     { 
         question: 'What city is the capital of Brazil ?',
@@ -51,6 +52,92 @@ let questions = [
              { text: 'Brasilia', correct: true },
              { text: 'Tokyo', correct: false }
         ]
-    }    
-];
-    
+    },
+//Q2
+    {
+        question: 'What city is the capital of Canada?',
+        answers: [
+          { text: 'Dublin', correct: false },
+          { text: 'Montevideo', correct: false },
+          { text: 'Panama City', correct: false },
+          { text: 'Ottawa', correct: true }
+        ]
+      },
+//Q3
+{
+    question: 'What city is the capital of ?',
+    answers: [
+      { text: 'Lisbon', correct: true },
+      { text: '', correct: false },
+      { text: '', correct: false },
+      { text: '', correct: false }
+    ]
+  },
+//Q4
+question: 'What city is the capital of ?',
+    answers: [
+      { text: '', correct: true },
+      { text: '', correct: false },
+      { text: '', correct: false },
+      { text: '', correct: false }
+    ]
+  },
+//Q5
+question: 'What city is the capital of ?',
+    answers: [
+      { text: '', correct: true },
+      { text: '', correct: false },
+      { text: '', correct: false },
+      { text: '', correct: false }
+    ]
+  },
+//Q6
+question: 'What city is the capital of ?',
+    answers: [
+      { text: '', correct: true },
+      { text: '', correct: false },
+      { text: '', correct: false },
+      { text: '', correct: false }
+    ]
+  },
+//Q7
+question: 'What city is the capital of ?',
+    answers: [
+      { text: '', correct: true },
+      { text: '', correct: false },
+      { text: '', correct: false },
+      { text: '', correct: false }
+    ]
+  },
+//Q8
+question: 'What city is the capital of ?',
+    answers: [
+      { text: '', correct: true },
+      { text: '', correct: false },
+      { text: '', correct: false },
+      { text: '', correct: false }
+    ]
+  },
+//Q9
+question: 'What city is the capital of ?',
+    answers: [
+      { text: '', correct: true },
+      { text: '', correct: false },
+      { text: '', correct: false },
+      { text: '', correct: false }
+    ]
+  },
+//Q10
+question: 'What city is the capital of ?',
+    answers: [
+      { text: '', correct: true },
+      { text: '', correct: false },
+      { text: '', correct: false },
+      { text: '', correct: false }
+    ]
+  },
+
+
+
+
+]
