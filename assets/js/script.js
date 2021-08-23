@@ -45,7 +45,18 @@ function resetState() {
 
 }
 
-function answerChoice() {
+function answerChoice(e) {
+let selectedButton = e.target
+let correct = selectedButton.dataset.correct
+statusClass(document.body, correct)
+Array.from(answersElement.firstChild).forEach(button => {
+  setStatusClass(button, button.dataset.correct)
+})
+
+function statusClass() {
+  
+}
+
 
 }
 // create questions
@@ -54,100 +65,100 @@ let questions = [
     { 
         question: 'What city is the capital of Brazil ?',
         answers: [
-             { text: 'Buenos Aires', correct: false },
-             { text: 'Paris', correct: false },
-             { text: 'Brasilia', correct: true },
-             { text: 'Tokyo', correct: false }
+             { choice1: 'Buenos Aires', correct: false },
+             { choice2: 'Paris', correct: false },
+             { choice3: 'Brasilia', correct: true },
+             { choice4: 'Tokyo', correct: false }
         ]
     },
 //Q2
     {
         question: 'What city is the capital of Canada ?',
         answers: [
-          { text: 'Dublin', correct: false },
-          { text: 'Montevideo', correct: false },
-          { text: 'Panama City', correct: false },
-          { text: 'Ottawa', correct: true }
+          { choice1: 'Dublin', correct: false },
+          { choice2: 'Montevideo', correct: false },
+          { choice3: 'Panama City', correct: false },
+          { choice4: 'Ottawa', correct: true }
         ]
       },
 //Q3
 {
     question: 'What city is the capital of Portugal ?',
     answers: [
-      { text: 'Lisbon', correct: true },
-      { text: 'Warsaw', correct: false },
-      { text: 'Bern', correct: false },
-      { text: 'Accra', correct: false }
+      { choice1: 'Lisbon', correct: true },
+      { choice2: 'Warsaw', correct: false },
+      { choice3: 'Bern', correct: false },
+      { choice4: 'Accra', correct: false }
     ]
   },
 //Q4
 {
 question: 'What city is the capital of Australia ?',
     answers: [
-      { text: 'Canberra', correct: true },
-      { text: 'Madrid', correct: false },
-      { text: 'Auckland', correct: false },
-      { text: 'Kyiv', correct: false }
+      { choice1: 'Canberra', correct: true },
+      { choice2: 'Madrid', correct: false },
+      { choice3: 'Auckland', correct: false },
+      { choice4: 'Kyiv', correct: false }
     ]
   },
 //Q5
 {
 question: 'What city is the capital of France ?',
     answers: [
-      { text: 'London', correct: false },
-      { text: 'Rome', correct: false },
-      { text: 'Santiago', correct: false },
-      { text: 'Paris', correct: true }
+      { choice1: 'London', correct: false },
+      { choice2: 'Rome', correct: false },
+      { choice3: 'Santiago', correct: false },
+      { choice4: 'Paris', correct: true }
     ]
   },
 //Q6
 {
 question: 'What city is the capital of England?',
     answers: [
-      { text: 'Prague', correct: false },
-      { text: 'London', correct: true },
-      { text: 'Mexico City', correct: false },
-      { text: 'Abuja', correct: false }
+      { choice1: 'Prague', correct: false },
+      { choice2: 'London', correct: true },
+      { choice3: 'Mexico City', correct: false },
+      { choice4: 'Abuja', correct: false }
     ]
   },
 //Q7
 {
 question: 'What city is the capital of South Korea ?',
     answers: [
-      { text: 'Seoul', correct: true },
-      { text: 'Hanoi', correct: false },
-      { text: 'Buenos Aires', correct: false },
-      { text: 'Tokyo', correct: false }
+      { choice1: 'Seoul', correct: true },
+      { choice2: 'Hanoi', correct: false },
+      { choice3: 'Buenos Aires', correct: false },
+      { choice4: 'Tokyo', correct: false }
     ]
   },
 //Q8
 {
 question: 'What city is the capital of USA ?',
     answers: [
-      { text: 'Athens', correct: false },
-      { text: 'Cairo', correct: false },
-      { text: 'Washington', correct: true },
-      { text: 'Berlin', correct: false }
+      { choice1: 'Athens', correct: false },
+      { choice2: 'Cairo', correct: false },
+      { choice3: 'Washington', correct: true },
+      { choice4: 'Berlin', correct: false }
     ]
   },
 //Q9
 {
 question: 'What city is the capital of Germany?',
     answers: [
-      { text: 'Vienna', correct: false },
-      { text: 'Moscow', correct: false },
-      { text: 'London', correct: false },
-      { text: 'Berlin', correct: true }
+      { choice1: 'Vienna', correct: false },
+      { choice2: 'Moscow', correct: false },
+      { choice3: 'London', correct: false },
+      { choice4: 'Berlin', correct: true }
     ]
   },
 //Q10
 {
 question: 'What city is the capital of Russia?',
     answers: [
-      { text: 'Moscow', correct: true },
-      { text: 'Vilnius', correct: false },
-      { text: 'Phnom Penh', correct: false },
-      { text: 'Washington', correct: false }
+      { choice1: 'Moscow', correct: true },
+      { choice2: 'Vilnius', correct: false },
+      { choice3: 'Phnom Penh', correct: false },
+      { choice4: 'Washington', correct: false }
     ]
   },
 
