@@ -36,12 +36,15 @@ function showQuestion(question) {
         if (answers.correct) {
             button.dataset.correct = answers.correct
         }
-        button.addEventListener('click', secelctAnswers)
+        button.addEventListener('click', answerChoice)
         answersElement.appendChild(button)
     });
 
 }
 function resetState() {
+  while (answersElement.firstChild) {
+    answersElement.removeChild(answersElement.firstChild)
+  }
 
 }
 
@@ -50,11 +53,21 @@ let selectedButton = e.target
 let correct = selectedButton.dataset.correct
 statusClass(document.body, correct)
 Array.from(answersElement.firstChild).forEach(button => {
-  setStatusClass(button, button.dataset.correct)
+  statusClass(button, button.dataset.correct)
 })
 
-function statusClass() {
-  
+function statusClass(element, correct) {
+  clearStatusClass(element)
+  if (correct) {
+    element.classList.add('correct')
+  } else {
+    element.classList.add('incorrect')
+  }
+}
+
+function clearStatusClass (element) {
+  element.classList.remove('correct')
+  element.classList.remove('incorrect')
 }
 
 
@@ -63,7 +76,7 @@ function statusClass() {
 //Q1
 let questions = [
     { 
-        question: 'What city is the capital of Brazil ?',
+        question: 'Which city is the capital of Brazil ?',
         answers: [
              { choice1: 'Buenos Aires', correct: false },
              { choice2: 'Paris', correct: false },
@@ -73,7 +86,7 @@ let questions = [
     },
 //Q2
     {
-        question: 'What city is the capital of Canada ?',
+        question: 'Which city is the capital of Canada ?',
         answers: [
           { choice1: 'Dublin', correct: false },
           { choice2: 'Montevideo', correct: false },
@@ -83,7 +96,7 @@ let questions = [
       },
 //Q3
 {
-    question: 'What city is the capital of Portugal ?',
+    question: 'Which city is the capital of Portugal ?',
     answers: [
       { choice1: 'Lisbon', correct: true },
       { choice2: 'Warsaw', correct: false },
@@ -93,7 +106,7 @@ let questions = [
   },
 //Q4
 {
-question: 'What city is the capital of Australia ?',
+question: 'Which city is the capital of Australia ?',
     answers: [
       { choice1: 'Canberra', correct: true },
       { choice2: 'Madrid', correct: false },
@@ -103,7 +116,7 @@ question: 'What city is the capital of Australia ?',
   },
 //Q5
 {
-question: 'What city is the capital of France ?',
+question: 'Which city is the capital of France ?',
     answers: [
       { choice1: 'London', correct: false },
       { choice2: 'Rome', correct: false },
@@ -113,7 +126,7 @@ question: 'What city is the capital of France ?',
   },
 //Q6
 {
-question: 'What city is the capital of England?',
+question: 'Which city is the capital of England?',
     answers: [
       { choice1: 'Prague', correct: false },
       { choice2: 'London', correct: true },
@@ -123,7 +136,7 @@ question: 'What city is the capital of England?',
   },
 //Q7
 {
-question: 'What city is the capital of South Korea ?',
+question: 'Which city is the capital of South Korea ?',
     answers: [
       { choice1: 'Seoul', correct: true },
       { choice2: 'Hanoi', correct: false },
@@ -133,7 +146,7 @@ question: 'What city is the capital of South Korea ?',
   },
 //Q8
 {
-question: 'What city is the capital of USA ?',
+question: 'Which city is the capital of USA ?',
     answers: [
       { choice1: 'Athens', correct: false },
       { choice2: 'Cairo', correct: false },
@@ -143,7 +156,7 @@ question: 'What city is the capital of USA ?',
   },
 //Q9
 {
-question: 'What city is the capital of Germany?',
+question: 'Which city is the capital of Germany?',
     answers: [
       { choice1: 'Vienna', correct: false },
       { choice2: 'Moscow', correct: false },
@@ -153,7 +166,7 @@ question: 'What city is the capital of Germany?',
   },
 //Q10
 {
-question: 'What city is the capital of Russia?',
+question: 'Which city is the capital of Russia?',
     answers: [
       { choice1: 'Moscow', correct: true },
       { choice2: 'Vilnius', correct: false },
