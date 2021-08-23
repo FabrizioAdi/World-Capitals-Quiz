@@ -5,6 +5,9 @@ let questionBox = document.getElementById('question-box');
 let questionElement = document.getElementById('question')
 let answersElement = document.getElementById('answers')
 
+let nextButton = document.getElementsByClassName('next')
+let exitButton = document.getElementsByClassName('exit')
+
 let randomQuestions, currentQuestion
 
 start.addEventListener('click', startGame);
@@ -20,6 +23,7 @@ function startGame() {
 }
 // function of changing the question to the next one
 function nextQuestion() {
+    resetState()
     showQuestion(randomQuestions[currentQuestion])
 }
 // random question section
@@ -35,6 +39,9 @@ function showQuestion(question) {
         button.addEventListener('click', secelctAnswers)
         answersElement.appendChild(button)
     });
+
+}
+function resetState() {
 
 }
 
