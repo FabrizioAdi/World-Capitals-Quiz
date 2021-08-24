@@ -5,12 +5,16 @@ let questionBox = document.getElementById('question-box');
 let questionElement = document.getElementById('question')
 let answersElement = document.getElementById('answers')
 
-let nextButton = document.getElementsByClassName('next')
-let exitButton = document.getElementsByClassName('exit')
+let next = document.getElementsByClassName('next')
+let exit = document.getElementsByClassName('exit')
 
 let randomQuestions, currentQuestion
 
 start.addEventListener('click', startGame);
+nextButton.addEventListener('click', () => {
+  currentQuestion++
+  nextQuestion()
+})
 // startGame control function
 function startGame() {
     console.log('start')
@@ -18,6 +22,7 @@ function startGame() {
     randomQuestions = questions.sort(() => Math.random() - .5)
     currentQuestion = 0
     questionBox.classList.remove('hide')
+    
     nextQuestion()
 
 }
@@ -69,8 +74,6 @@ function clearStatusClass (element) {
   element.classList.remove('correct')
   element.classList.remove('incorrect')
 }
-
-
 }
 // create questions
 //Q1
