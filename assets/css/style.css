@@ -95,3 +95,12 @@ button:hover {
     font-size: 20px;
     font-weight: bold;
 }
+
+body.correct {
+    background:chartreuse
+
+}
+body.incorrect {
+    background: crimson;
+
+}
