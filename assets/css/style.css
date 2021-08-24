@@ -82,12 +82,11 @@ button:hover {
     border-color: rgb(12, 12, 12);
 }
 /* Controls section witx exit and next button */
-#controls {
+.controls {
     display:flex;
     align-items: center;
 }
-
-.exit, .next {
+#exit, #next {
     background: tomato;
     color: white;
     padding: 5px;

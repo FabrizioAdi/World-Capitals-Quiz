@@ -5,13 +5,13 @@ let questionBox = document.getElementById('question-box');
 let questionElement = document.getElementById('question')
 let answersElement = document.getElementById('answers')
 
-let next = document.getElementsByClassName('next')
-let exit = document.getElementsByClassName('exit')
+let next = document.getElementById('next')
+let exit = document.getElementById('exit')
 
 let randomQuestions, currentQuestion
 
 start.addEventListener('click', startGame);
-nextButton.addEventListener('click', () => {
+next.addEventListener('click', () => {
   currentQuestion++
   nextQuestion()
 })
@@ -22,7 +22,6 @@ function startGame() {
     randomQuestions = questions.sort(() => Math.random() - .5)
     currentQuestion = 0
     questionBox.classList.remove('hide')
-    
     nextQuestion()
 
 }
