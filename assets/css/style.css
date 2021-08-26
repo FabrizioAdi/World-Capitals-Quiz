@@ -106,15 +106,19 @@ body.incorrect {
 
 }
 #score {
-    margin: 5px auto;
-    width: 60%;
-    font-size: 15px;
+    font-family: Merienda, cursive;
+    width: 65%;
+    font-size: 16px;
+    margin: 20px 0;
+
+}
+.scores {
+    display: inline-block;
 }
 #correct {
     color: green;
     font-weight: bold;
 }
-
 #incorrect {
     color: red;
     font-weight: bold;

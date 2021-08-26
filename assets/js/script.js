@@ -74,6 +74,7 @@ function clearStatusClass (element) {
   element.classList.remove('incorrect')
 }
 }
+
 // create questions
 //Q1
 let questions = [
