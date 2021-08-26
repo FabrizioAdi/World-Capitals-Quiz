@@ -102,6 +102,20 @@ body.correct {
 
 }
 body.incorrect {
-    background: rgb(235, 9, 54);
+    background: red;
 
+}
+#score {
+    margin: 5px auto;
+    width: 60%;
+    font-size: 15px;
+}
+#correct {
+    color: green;
+    font-weight: bold;
+}
+
+#incorrect {
+    color: red;
+    font-weight: bold;
 }
