@@ -46,6 +46,7 @@ function showQuestion(question) {
 
 }
 function resetState() {
+  clearStatusClass(document.body)
   next.classList.add('hide')
   while (answersElement.firstChild) {
     answersElement.removeChild(answersElement.firstChild)
@@ -66,7 +67,6 @@ if (randomQuestions.length > currentQuestion + 1) {
   start.innerText = 'Restart'
   start.classList.remove('hide')
 }
-
 
 function statusClass(element, correct) {
   clearStatusClass(element)
