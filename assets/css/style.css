@@ -98,8 +98,7 @@ button:hover {
 }
 
 body.correct {
-    background:rgb(37, 230, 11)
-
+    background:rgb(37, 230, 11);
 }
 body.incorrect {
     background: red;

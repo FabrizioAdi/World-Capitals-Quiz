@@ -46,6 +46,7 @@ function showQuestion(question) {
 
 }
 function resetState() {
+  next.classList.add('hide')
   while (answersElement.firstChild) {
     answersElement.removeChild(answersElement.firstChild)
   }
@@ -59,6 +60,13 @@ statusClass(document.body, correct)
 Array.from(answersElement.firstChild).forEach(button => {
   statusClass(button, button.dataset.correct)
 })
+if (randomQuestions.length > currentQuestion + 1) {
+  next.classList.remove('hide')
+} else {
+  start.innerText = 'Restart'
+  start.classList.remove('hide')
+}
+
 
 function statusClass(element, correct) {
   clearStatusClass(element)
