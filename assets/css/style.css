@@ -76,8 +76,8 @@ h1 {
     color: white;
     padding: 5px 10px;
     margin-bottom: 5px;
+    cursor: pointer;
 }
-
 button:hover {
     border-color: rgb(12, 12, 12);
 }
@@ -94,13 +94,14 @@ button:hover {
     border-radius: 6px;
     font-size: 20px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 body.correct {
-    background:chartreuse
+    background:rgb(37, 230, 11)
 
 }
 body.incorrect {
-    background: crimson;
+    background: rgb(235, 9, 54);
 
 }
