@@ -46,7 +46,6 @@ function showQuestion(question) {
 
 }
 function resetState() {
-  clearStatusClass(document.body)
   next.classList.add('hide')
   while (answersElement.firstChild) {
     answersElement.removeChild(answersElement.firstChild)
@@ -64,7 +63,7 @@ Array.from(answersElement.firstChild).forEach(button => {
 if (randomQuestions.length > currentQuestion + 1) {
   next.classList.remove('hide')
 } else {
-  start.innerText = 'Restart'
+  start.innerText = 'Start again'
   start.classList.remove('hide')
 }
 

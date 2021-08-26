@@ -97,10 +97,10 @@ button:hover {
     cursor: pointer;
 }
 
-body.correct {
+.correct {
     background:rgb(37, 230, 11);
 }
-body.incorrect {
+.incorrect {
     background: red;
 
 }
