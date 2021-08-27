@@ -1,4 +1,4 @@
-// select all elements
+// Select all elements
 let start = document.getElementById('start');
 let questionBox = document.getElementById('question-box');
 
@@ -15,7 +15,7 @@ next.addEventListener('click', () => {
   currentQuestion++
   nextQuestion()
 })
-// startGame control function
+// StartGame the main game function
 function startGame() {
     console.log('start')
     start.classList.add('hide')
@@ -25,12 +25,12 @@ function startGame() {
     nextQuestion()
 
 }
-// function of changing the question to the next one
+// Function of changing the question to the next one
 function nextQuestion() {
     resetState()
     showQuestion(randomQuestions[currentQuestion])
 }
-// random question section
+// Random question section
 function showQuestion(question) {
     questionElement.innerText = question.question
     question.answers.forEach(answers => {
@@ -45,6 +45,7 @@ function showQuestion(question) {
     });
 
 }
+
 function resetState() {
   next.classList.add('hide')
   while (answersElement.firstChild) {
@@ -52,7 +53,7 @@ function resetState() {
   }
 
 }
-
+// Function that allows to choose an answer, as well as restart the game after completed all the questions.
 function answersChoice(e) {
 let selectedButton = e.target
 let correct = selectedButton.dataset.correct
@@ -71,6 +72,7 @@ function statusClass(element, correct) {
   clearStatusClass(element)
   if (correct) {
     element.classList.add('correct')
+   
   } else {
     element.classList.add('incorrect')
   }
@@ -82,7 +84,7 @@ function clearStatusClass (element) {
 }
 }
 
-// create questions
+// Game questions
 //Q1
 let questions = [
     { 
