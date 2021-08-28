@@ -8,21 +8,21 @@ The main goal of the quiz is to have fun through learning.
 
  [I am the link to the website](https://fabrizioadi.github.io/World-Capitals-Quiz/) Hello good people !
 
-## Table of Contents
+- [World Capitals Quizzzzz...!](#world-capitals-quizzzzz-)
+  * [Table of Contents](#table-of-contents)
+    + [Features](#features)
+    + [The Game Options](#the-game-options)
+    + [The Game Results](#the-game-results)
+    + [Features left to implement](#features-left-to-implement)
+    + [Testing](#testing)
+    + [Validator Testing](#validator-testing)
+    + [Technologies](#technologies)
+    + [Deployment](#deployment)
+      - [Step to Using Github Pages](#step-to-using-github-pages)
+    + [Credits/Reference](#credits-reference)
+    + [Author Info](#author-info)
 
-Features
-The Game Options
-The Game Results
-Features left to implement
-Testing
-Validator Testing
-Bugs
-Validator Testing
-Unfixed Bugs
-Technologies
-Deployment
-Credits/Reference
-Author Info
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 ### Features
 
