@@ -9,7 +9,7 @@ The main goal of the quiz is to have fun through learning.
  [I am the link to the website](https://fabrizioadi.github.io/World-Capitals-Quiz/) Hello good people !
 
 - [World Capitals Quizzzzz...!](#world-capitals-quizzzzz-)
-## [Table of Contents](#table-of-contents)
+* [Table of Contents](#table-of-contents)
     + [Features](#features)
     + [The Game Options](#the-game-options)
     + [The Game Results](#the-game-results)
