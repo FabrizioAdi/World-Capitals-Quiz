@@ -79,8 +79,9 @@ h1 {
     cursor: pointer;
 }
 .button:hover {
-    background: rgb(17, 247, 28);
+    background: yellow;
     border-color: rgb(12, 12, 12);
+    color: black;
 }
 
 /* Controls section witx exit and next button */
