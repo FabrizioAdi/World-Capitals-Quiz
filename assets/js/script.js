@@ -5,6 +5,8 @@ let questionBox = document.querySelector('#question-box');
 let questionElement = document.querySelector('#question')
 let answersElement = document.querySelector('#answers')
 
+let score = document.querySelector('#score')
+
 let next = document.querySelector('#next')
 let exit = document.querySelector('#exit')
 
@@ -67,6 +69,10 @@ if (randomQuestions.length > currentQuestion + 1) {
   start.innerText = 'Start again'
   start.classList.remove('hide')
 }
+
+// Calculate correct and incorrect answers
+
+  
 
 function statusClass(element, correct) {
   clearStatusClass(element)
