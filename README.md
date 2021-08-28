@@ -61,18 +61,11 @@ Make a choice:
 
 ### Validator Testing
 
+HTML
+* Document checking completed. No errors or warnings to show.
 
-
-
-
-
-
-
-
-
-
-
-
+CSS
+* Document checking completed. No errors or warnings to show.
 
 ### Technologies
 * HTML - will help build a solid foundation.
@@ -99,20 +92,23 @@ Make a choice:
 
 ### Credits/Reference
 
+Most of my javascript code comes from the following YouTube tutorials explaining and showing how to create quizzes from begining.
 
+* [Build A Quiz App With JavaScript](https://www.youtube.com/watch?v=riDzcEQbX6k&t=690s)
+* [Create Quiz Web App using HTML CSS and JavaScript | Quiz App JavaScript](https://www.youtube.com/watch?v=WHHYz8rZmDU)
+* [How to Make a Quiz App using HTML CSS Javascript](https://www.youtube.com/watch?v=f4fB9Xg2JEY&t=2343s)
+* [How To Make Quiz App With Timer Using HTML CSS & JavaScript](https://www.youtube.com/watch?v=3fbU4z7fPe4&t=979s)
 
+Of course, I tried to create my unique code completely different from the YouTube tutorials, but it's not that simple. In part, I was able to write somewhat different code.
 
 Acknowledgements
 Also thank you to the Code Institute slack channel, tutor Kasia and mentor Precious Ijege.
 
 ### Author Info
+FabrizioAdi
 
 
 
 
 
 python3 -m http.server
-
-https://www.youtube.com/watch?v=riDzcEQbX6k&t=690s
-https://www.youtube.com/watch?v=WHHYz8rZmDU
-https://github.com/Ahmad528/quizApp/tree/main/quizwuiz
