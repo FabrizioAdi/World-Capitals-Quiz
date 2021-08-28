@@ -1,12 +1,12 @@
 // Select all elements
-let start = document.getElementById('start');
-let questionBox = document.getElementById('question-box');
+let start = document.querySelector('#start');
+let questionBox = document.querySelector('#question-box');
 
-let questionElement = document.getElementById('question')
-let answersElement = document.getElementById('answers')
+let questionElement = document.querySelector('#question')
+let answersElement = document.querySelector('#answers')
 
-let next = document.getElementById('next')
-let exit = document.getElementById('exit')
+let next = document.querySelector('#next')
+let exit = document.querySelector('#exit')
 
 let randomQuestions, currentQuestion
 

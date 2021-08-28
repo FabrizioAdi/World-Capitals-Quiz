@@ -39,14 +39,14 @@ Author Info
 
 ### Deployment
 #### Step to Using Github Pages
-In the GitHub Repository from the project: https://fabrizioadi.github.io/World-Capitals-Quiz/
-Click the "Settings" Tab.
-Scroll Down to the Git Hub Pages Heading.
-There will be a message - Pages settings now has its own dedicated tab! press the - Check it out here!
-Select "Master Branch" as the source.
-The Page will reload "Settings" again.
-Scroll to GitHub pages heading and there will now be a clickable link to the website: https://fabrizioadi.github.io/World-Capitals-Quiz/
-Click this link for the live deployed website.
+* In the GitHub Repository from the project: https://fabrizioadi.github.io/World-Capitals-Quiz/
+* Click the "Settings" Tab.
+* Scroll Down to the Git Hub Pages Heading.
+* There will be a message - Pages settings now has its own dedicated tab! press the - Check it out here!
+* Select "Master Branch" as the source.
+* The Page will reload "Settings" again.
+* Scroll to GitHub pages heading and there will now be a clickable link to the website: https://fabrizioadi.github.io/World-Capitals-Quiz/
+* Click this link for the live deployed website.
 
 ### Credits/Reference
 
