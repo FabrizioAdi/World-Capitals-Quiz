@@ -127,3 +127,29 @@ h1 {
     color: red;
     font-weight: bold;
 }
+
+/* Show up window with message about correct and incorrect answer */
+
+#info {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding: 20px;
+    width: 600px;
+    height: 300px;
+    font-size: 24px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 2px solid #ddd;
+  }
+  
+  #info-active {
+    display: flex;
+  }
+  
+  #close-info {
+    position: absolute;
+    top: 0;
+    right: 30px;
+  }
